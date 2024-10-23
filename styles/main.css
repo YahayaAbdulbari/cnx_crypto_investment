@@ -1,0 +1,383 @@
+@import url('https://fonts.googleapis.com/css2?family=Gothic+A1&display=swap');
+:root{
+
+    --White: #ffffff;
+    --whitesmoke: #f0eeee;
+    --black: black;
+    --darkGray: #232323;
+    --lightGray: #626262;
+    --my-font: "Gothic A1",sans-serif;
+    --orange: orange;
+    --navy-blue: #000020;
+    --valid: #00ff00;
+    --invalid: red;
+    --warning: yellow;
+
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: var(--whitesmoke);
+    font-family: var(--my-font);
+    box-sizing: border-box;
+}
+
+h1{
+    color: var(--navy-blue);
+}
+h2{
+    text-align: center;
+    color: var(--navy-blue);
+}
+
+/* ************************************************************************************* */
+                             /* ALL NAVIGATIONS */
+/* ************************************************************************************* */
+
+header{
+    width: 100%;
+    height: 90px;
+    background-color: var(--navy-blue);
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    z-index: 99;
+}
+
+header .tittle{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+header .tittle img{
+    width: 90px;
+    height: 100%;
+}
+
+header .tittle .name{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+header .tittle .name h1{
+    color: var(--orange);
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 2px var(--whitesmoke);
+}
+header .tittle .name p{
+    font-size: 1.6rem;
+    color: var(--whitesmoke);
+}
+
+header .tittle .toggle-btn{
+    width: 5%;
+    height: 100%;
+    color: var(--whitesmoke);
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header .tittle .toggle-btn i{
+    position: absolute;
+    padding: 10px;
+    border: 1px solid var(--whitesmoke);
+    transition: .5s;
+    cursor: pointer;
+}
+
+/* side navigation links */
+aside{
+    height: 100vh;
+    width: 0vw;
+    background-color: var(--whitesmoke);
+    position: fixed;
+    margin-top: 90px;
+    z-index: 98;
+    transition: 1.2s;
+}
+
+aside.open{
+    width: 100vw;
+    overflow: hidden;
+}
+
+aside nav{
+    width: 100%;
+    height: auto;
+    text-transform: capitalize;
+    overflow: hidden;
+}
+
+aside nav h2{
+    color: var(--orange);
+    font-size: 1.8rem;
+    padding: 30px;
+    /* background-color: var(--navy-blue); */
+    text-wrap: nowrap;
+}
+
+aside nav ul{
+    width: 100%;
+}
+
+aside nav ul a li{
+    width: 100%;
+    height: auto;
+    list-style: none;
+    border-bottom: 1px solid var(--black);
+    text-wrap: nowrap;
+    padding: 15px 0;
+    font-size: 1.3rem;
+}
+aside nav ul a li.active{
+    color: var(--valid);
+}
+
+aside nav ul a{
+    width: 100%;
+    height: 100%;
+    color: var(--navy-blue);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+aside nav a li i{
+    margin-right: 15px;
+    margin-left: 20px;
+}
+
+/* ***************MEDIA QUERY************* */
+@media screen and (max-width:600px) {
+
+    header{
+        width: 100vw;
+        height: 70px;
+    }
+
+    header .tittle img{
+        width: 70px;
+        height: 100%;
+    }
+
+    header .tittle .name{
+        width: 75vw;
+        margin-left: 2px;
+    }
+
+    header .tittle .name h1{
+        font-size: 1.8rem;
+    }
+    header .tittle .name p{
+        font-size: 1.1rem;
+        color: var(--whitesmoke);
+        text-align: center;
+    }
+
+    header .tittle .toggle-btn{
+        width: 65px;
+        height: 100%;
+        font-size: 1.6rem;
+    }
+
+    /* side navigation links */
+
+    aside{
+        margin-top: 70px;
+    }
+
+    aside.open{
+        width: 100vw;
+        overflow: hidden;
+    }
+
+    aside nav h2{
+        font-size: 1.4rem;
+        padding: 10px 30px;
+    }
+
+    aside nav ul a li{
+        width: 100%;
+        padding: 15px 0;
+        font-size: 1.1rem;
+
+    }
+
+}
+
+/* bottom navigation */
+@media screen and (max-width:600px) {
+    .bottom-nav{
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        height: 70px;
+        background-color: var(--sky-blue);
+        z-index: 99;
+        transition: 1s;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .bottom-nav.close{
+        height: 0;
+    }
+    .bottom-nav nav{
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        align-items: center;
+        justify-content: center;
+        padding: 10px 0;
+    }
+
+    .bottom-nav nav a{
+        grid-column: span 1;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        text-decoration: none;
+        text-transform: capitalize;
+        text-wrap: nowrap;
+        color: var(--black);
+        font-weight: bold;
+    }
+    .bottom-nav nav a i{
+        font-size: 1.4rem;
+        color: var(--whitesmoke);
+        text-shadow: 2px 2px 1px var(--lightGray);
+    }
+    .bottom-nav nav a.active{
+        color: var(--valid);
+    }
+
+    .bottom-nav nav a .fa-message{
+        color: blue;
+    }
+}
+/* ************************************************************************************* */
+                             /* ALL NAVIGATIONS */
+/* ************************************************************************************* */
+.divider{
+    padding-top: 90px;
+}
+
+/* header{
+    display: none;
+} */
+
+@media screen and (max-width:600px) {
+    .divider{
+        padding-top: 70px;
+    }
+}
+
+section{
+    width: 100vw;
+    height: auto;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 40px 0;
+}
+/* ************************************************************************************* */
+                                    /* WHAT TO ACHIEVE */
+/* ************************************************************************************* */
+
+section .whattoachieve{
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 10px;
+}
+
+section .whattoachieve h1{
+    text-align: center;
+}
+
+section .whattoachieve .features{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+section .whattoachieve .features .feature{
+    width: 300px;
+    height: 260px;
+    color: var(--navy-blue);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: .5px solid gray;
+    padding: 20px;
+    text-align: center;
+    transition: .5s;
+}
+section .whattoachieve .features .feature:hover{
+    background-color: var(--orange);
+    i{
+        color: var(--navy-blue);
+    }
+}
+
+section .whattoachieve #feature{
+    color: var(--orange);
+}
+
+section .whattoachieve .features .feature i{
+    font-size: 5rem;
+    color: var(--orange);
+    background: transparent;
+}
+
+section .whattoachieve .features .feature h3{
+    text-transform: capitalize;
+    margin: 20px 0 10px 0;
+}
+
+@media screen and (max-width:600px) {
+    section .whattoachieve .features{
+        grid-template-columns: 1fr;
+    }
+
+    section .whattoachieve .features .feature{
+        width: 80vw;
+        height: 240px;
+    }
+}
+
+@media (min-width:610px) and (max-width:800px) {
+    section .whattoachieve .features{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+
+/* ************************************************************************************* */
+                                    /* WHAT TO ACHIEVE */
+/* ************************************************************************************* */

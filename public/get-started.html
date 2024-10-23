@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../bootstrap5/css/all.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Gothic+A1&display=swap');
+
+        :root{
+            --my-font: "Gothic A1",sans-serif;
+        }
+
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            width: 100%;
+            height: 100vh;
+            background-color: var(--whitesmoke);
+            font-family: var(--my-font);
+        }
+
+        section{
+            width: 100vw;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-image: url(/images/chart6.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-clip: padding-box;
+        }
+
+        section .our-investment{
+            background: transparent;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px 10px;
+        }
+
+        section .our-investment .features{
+            display: grid;
+            align-items: center;
+            justify-content: center;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            padding: 20px;
+        }
+
+        section .our-investment .features .feature{
+            width: 300px;
+            height: 260px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid black;
+            padding: 20px;
+            text-align: center;
+            transition: .5s;
+        }
+        section .our-investment .features .feature:hover{
+            border: 1px solid orange;
+            i{
+                color: black;
+            }
+        }
+
+        section .our-investment #feature{
+            color: orange;
+        }
+
+        section .our-investment .features .feature i{
+            font-size: 5rem;
+            color: orange;
+            background: transparent;
+        }
+
+        section .our-investment .features .feature h3{
+            text-transform: capitalize;
+            margin: 20px 0 10px 0;
+        }
+
+        @media screen and (max-width:600px) {
+            section .our-investment .features{
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (min-width:610px) and (max-width:800px) {
+            section .our-investment .features{
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <section class="what-to-achieve our-invtmt">
+
+        <div class="whattoachieve our-investment">
+            <h1>INVESTMENT <span id="feature">PRO</span></h1>
+
+            <div class="features">
+                
+                <div class="feature">
+                    
+                    <i class="fa-brands fa-bitcoin"></i>
+                    <h3>crypto transition</h3>
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius, sequi!
+                    </p>
+
+                </div>
+                
+                <div class="feature">
+                    
+                    <i class="fa-solid fa-money-bill-transfer"></i>
+                    <h3>coin buy & sell</h3>
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius, sequi!
+                    </p>
+
+                </div>
+                
+                <div class="feature">
+                    
+                    <i class="fa-brands fa-stack-overflow"></i>
+                    <h3>crypto and fiat deposit</h3>
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius, sequi!
+                    </p>
+
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+    
+</body>
+</html>

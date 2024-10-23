@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- google font Gothic A1 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gothic+A1&display=swap" rel="stylesheet">
+    <!-- styles links -->
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./bootstrap5/css/all.css">
+    <title>topNavigation</title>
+    <link rel="stylesheet" href="./styles/why-us.css">
+    <link rel="stylesheet" href="./styles/get-started.css">
+    <link rel="stylesheet" href="./styles/our-services.css">
+    <link rel="stylesheet" href="./styles/loader.css">
+</head>
+<body>
+
+    <!-- loading animation -->
+    <div id="loader"></div>
+    <script>
+        load_page();
+        unload_page();
+        function load_page(){
+            window.addEventListener('load', ()=>{
+                document.getElementById('loader').classList.add('page_ready');
+            });
+        }
+        function unload_page(){
+            window.addEventListener('unload', ()=>{
+                document.getElementById('loader').classList.add('page_ready');
+            });
+        }
+    </script>
+
+    <header>
+        <div class="tittle">
+            <img src="./images/phone-trade2.jpg" alt="company-logo">
+            <div class="name">
+                <h1>CNX</h1>
+            <p>crypto exchange</p>
+            </div>
+            <div class="toggle-btn">
+                <i class="fa-solid fa-bars"></i>
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- side navigation links -->
+    <aside class="aside">
+        <nav>
+            <h2>side menu</h2>
+            <ul>
+                <a href="#"><li class="active"><i class="fa-solid fa-house"></i>home</li></a>
+                <a href="./login.html"><li><i class="fa-solid fa-lock-open"></i>login</li></a>
+                <a href="./signup.html"><li><i class="fa-solid fa-user-lock"></i>sign-up</li></a>
+                <a href="../../protected/profile.html"><li><i class="fa-solid fa-user-check"></i>profile</li></a>
+                <a href="#"><li><i class="fa-solid fa-users-gear"></i>help</li></a>
+                <a href="#"><li><i class="fa-solid fa-building"></i>about</li></a>
+                <a href="#"><li><i class="fa-solid fa-phone"></i>contact us</li></a>
+                <a href="#"><li><i class="fa-solid fa-users"></i>comunity</li></a>
+                <a href="#"><li><i class="fa-solid fa-user-shield"></i>privacy policy</li></a>
+            </ul>
+        </nav>
+        <script src="./script/mainNavigation.js"></script>
+    </aside>
+
+    <!-- this div create space between the top body and the first section so that the section should not be behind the header -->
+     <div class="divider"></div>
+
+    <!-- main content -->
+    <section class="what-to-achieve">
+
+        <div class="whattoachieve">
+            <h2>what you can achieve here</h2>
+            <h1>CNX EXCH TRADE</h1>
+            <h1 id="feature">FEATURES</h1>
+            <div class="features">
+                
+                <div class="feature">
+                    
+                    <i class="fa-brands fa-bitcoin"></i>
+                    <h3>crypto transition</h3>
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius, sequi!
+                    </p>
+
+                </div>
+                
+                <div class="feature">
+                    
+                    <i class="fa-solid fa-money-bill-transfer"></i>
+                    <h3>coin buy & sell</h3>
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius, sequi!
+                    </p>
+
+                </div>
+                
+                <div class="feature">
+                    
+                    <i class="fa-brands fa-stack-overflow"></i>
+                    <h3>crypto and fiat deposit</h3>
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius, sequi!
+                    </p>
+
+                </div>
+                
+                <div class="feature">
+                    
+                    <i class="fa-solid fa-shield-halved"></i>
+                    <h3>account security</h3>
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius, sequi!
+                    </p>
+
+                </div>
+                
+                <div class="feature">
+                    
+                    <i class="fa-solid fa-money-bill-trend-up"></i>
+                    <h3>cryptocurrency trading</h3>
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius, sequi!
+                    </p>
+
+                </div>
+                
+                <div class="feature">
+                    
+                    <i class="fa-solid fa-cubes"></i>
+                    <h3>trading legality</h3>
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius, sequi!
+                    </p>
+
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+    <!-- why choose us -->
+    <section class="what-to-achieve">
+
+        <div class="whattoachieve why-us">
+            <h1>WHY CHOOSE</h1>
+            <h1 id="feature">CNX EXCH TRADE</h1>
+            <div class="features">
+                
+                <div class="feature">
+                    
+                    <i class="fa-brands fa-fantasy-flight-games"></i>
+                    <h3>easy trading</h3>
+                    <p>
+                        No need to stress yourself, with our automatic trading tools.
+                    </p>
+
+                </div>
+                
+                <div class="feature">
+                    
+                    <i class="fa-solid fa-plane-departure"></i>
+                    <h3>trading stratagy</h3>
+                    <p>
+                        As professionals, we kmow all the trading strategies required for profit.
+                    </p>
+
+                </div>
+                
+                <div class="feature">
+                    
+                    <i class="fa-solid fa-sack-dollar"></i>
+                    <h3>money exchange</h3>
+                    <p>
+                        Your currency does'nt matter, you can swap to any currency you wish with our currency swap tool.
+                    </p>
+
+                </div>
+                
+                <div class="feature">
+                    
+                    <i class="fa-solid fa-anchor-lock"></i>
+                    <h3>security ensure</h3>
+                    <p>
+                        100% security is ensured to every customers account to ensure no loss.
+                    </p>
+
+                </div>
+                
+            </div>
+        </div>
+
+    </section>
+
+    <!-- our investment -->
+    <section class="what-to-achieve our-invtmt">
+
+        <div class="whattoachieve our-investment">
+            <h1>GET <span id="feature">STARTEED</span></h1>
+
+            <div class="features">
+                
+                <div class="feature">
+                    
+                    <i class="fa-solid fa-hand-pointer"></i>
+                    <h3>pick a plan</h3>
+                    <p>
+                        Select any investment plan from our plans.
+                    </p>
+
+                </div>
+                
+                <div class="feature">
+                    
+                    <i class="fa-solid fa-boxes-stacked"></i>
+                    <h3>make a deposit</h3>
+                    <p>
+                        Make a deposit into your trading account on our platform and your trading start automatically.
+                    </p>
+
+                </div>
+                
+                <div class="feature">
+                    
+                    <i class="fa-solid fa-handshake"></i>
+                    <h3>profit recieved</h3>
+                    <p>
+                        Now you come back and withdraw your profit, and if you wish you can trade again
+                    </p>
+
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+    <!-- our services -->
+    <section class="our-services">
+
+        <div class="services-cont">
+
+            <div class="service">
+                <!-- image -->
+                <div class="img">
+                    <img src="../images/bitcoin4.jpg" alt="bicoin trading">
+                </div>
+                <!-- bottom tittle -->
+                <div class="srvc-ttle">
+                    <i class="fa-brands fa-fantasy-flight-games"></i>
+                    <p>bicoin trading</p>
+                </div>
+                <!-- message -->
+                 <div class="text">
+                    <p>
+                        Our personels are professionals who have been on this field for a very long time, they trade on sure and strong signals, which makes your profits come higher.
+                    </p>
+                 </div>
+            </div>
+
+            <div class="service">
+                <!-- image -->
+                <div class="img">
+                    <img src="../images/trade15.jpg" alt="coin buy & sell">
+                </div>
+                <!-- bottom tittle -->
+                <div class="srvc-ttle">
+                    <i class="fa-solid fa-money-bill-transfer"></i>
+                    <p>coin buy & sell</p>
+                </div>
+                <!-- message -->
+                 <div class="text">
+                    <p>
+                        We are aslo in partnership with Binance and other crypto company, so we also can buy/sell crypto to any of our customers, and it makes it much easier for our clients who want it much easier for our clients who want to invest with less stress of buying crypto from other places before investing.
+                    </p>
+                 </div>
+            </div>
+
+            <div class="service">
+                <!-- image -->
+                <div class="img">
+                    <img src="../images/chart4.jpg" alt="customer bonus">
+                </div>
+                <!-- bottom tittle -->
+                <div class="srvc-ttle">
+                    <i class="fa-solid fa-sack-dollar"></i>
+                    <p>customer bonus</p>
+                </div>
+                <!-- message -->
+                 <div class="text">
+                    <p>
+                        As a customer with our company, we give daily benefits for everyday login, in order to thank our customers.
+                    </p>
+                 </div>
+            </div>
+
+        </div>
+
+    </section>
+
+</body>
+</html>
