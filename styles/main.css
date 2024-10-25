@@ -385,6 +385,7 @@ section .whattoachieve .features .feature h3{
 .bottom-scroller{
     position: fixed;
     bottom: -40px;
+    background-color: var(--navy-blue);
 }
 .tradingview-widget-copyright{
     display: none !important;
