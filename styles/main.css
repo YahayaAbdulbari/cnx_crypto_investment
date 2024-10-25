@@ -384,7 +384,7 @@ section .whattoachieve .features .feature h3{
 
 .bottom-scroller{
     position: fixed;
-    bottom: -20px;
+    bottom: -40px;
 }
 .tradingview-widget-copyright{
     display: none !important;
