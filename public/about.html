@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../bootstrap5/css/all.css">
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+
+        body{
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .about{
+            width: 450px;
+            height: auto;
+            grid-column: span 1;
+            align-self: center;
+        }
+
+        .about h2{
+            margin: 20px auto;
+        }
+
+        .about h2 span{
+            color: orange;
+        }
+
+        .about .image{
+            width: 100%;
+            height: 300px;
+            overflow: hidden;
+            border-radius: 3px;
+        }
+
+        .about .image img{
+            width: 100%;
+            height: 100%;
+        }
+        .about .info{
+            width: 100%;
+            padding: 10px;
+        }
+
+        .about .info button{
+            font-size: 1.2rem;
+            color: whitesmoke;
+            padding: 10px 15px;
+            background-color: orange;
+            border: none;
+            margin: 20px auto;
+            text-transform: capitalize;
+            border-radius: 3px;
+        }
+
+        @media screen and (max-width:600px) {
+            .about{
+                width: 90vw;
+                height: auto;
+                grid-column: span 1;
+            }
+
+            .about h2{
+                margin: 10px auto;
+            }
+
+            .about .info p{
+                font-size: .9rem;
+            }
+
+            .about .info button{
+                font-size: 1rem;
+                color: whitesmoke;
+                padding: 10px 20px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- about content -->
+    <div class="about">
+        <h2>About <span>us</span></h2>
+        <div class="image">
+            <img src="../images/stro_agent2.2.jpeg" alt="">
+        </div>
+        <div class="info">
+            <h2>who we are</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, facilis incidunt totam voluptas, officiis quisquam culpa quaerat provident quo quod omnis dolorem nemo maiores non similique beatae voluptate eius consectetur, cupiditate eaque quas deserunt voluptatum sint ad! Rem, corrupti labore?
+            </p>
+            <a href="#"><button>get started <i class="fa-solid fa-arrow-right-to-bracket"></i></button></a>
+        </div>
+    </div>
+    
+</body>
+</html>
