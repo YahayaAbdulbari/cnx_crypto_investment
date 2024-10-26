@@ -127,6 +127,7 @@ aside nav h2{
     color: var(--orange);
     font-size: 1.8rem;
     padding: 30px;
+    /* background-color: var(--navy-blue); */
     text-wrap: nowrap;
 }
 
@@ -278,9 +279,6 @@ aside nav a li i{
     padding-top: 90px;
 }
 
-/* header{
-    display: none;
-} */
 
 @media screen and (max-width:600px) {
     .divider{
@@ -335,7 +333,7 @@ section .whattoachieve .features .feature{
     transition: .5s;
 }
 section .whattoachieve .features .feature:hover{
-    background: linear-gradient(to top right, orange, #000020, orange);
+    background-color: var(--orange);
     i{
         color: var(--navy-blue);
     }
