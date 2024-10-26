@@ -127,7 +127,6 @@ aside nav h2{
     color: var(--orange);
     font-size: 1.8rem;
     padding: 30px;
-    /* background-color: var(--navy-blue); */
     text-wrap: nowrap;
 }
 
@@ -336,7 +335,7 @@ section .whattoachieve .features .feature{
     transition: .5s;
 }
 section .whattoachieve .features .feature:hover{
-    background-color: var(--orange);
+    background: linear-gradient(to top right, orange, #000020, orange);
     i{
         color: var(--navy-blue);
     }
