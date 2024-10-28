@@ -152,3 +152,19 @@ section.hero article .btns :nth-child(2){
     }
   
 }
+
+@media (min-width:610px) and (max-width:900px) {
+    section.hero .img-frame img{
+        width: 100%;
+        height: 700px;
+    }
+
+    section.hero article{
+        position: absolute;
+        width: 90%;
+        height: 380px;
+        padding: 40px 20px;
+        backdrop-filter: blur(1px);
+        box-shadow: 0 0 2px 1px var(--whitesmoke);
+    }
+}
