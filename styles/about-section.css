@@ -42,6 +42,7 @@ body{
     .about-section{
         flex-direction: column;
         padding: 20px 0;
+        justify-content: center;
     }
 }
 
@@ -214,21 +215,22 @@ body{
         width: 95vw;
         padding: 10px 0px;
         border-radius: 3px;
-        margin-top: 40px;
+        margin-top: 5px;
     }
 
     .faq-cointainer h2{
         margin: 10px;
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
 
     .faq-cointainer .question .quest{
-        font-size: 1rem;
+        font-size: .8rem;
     }
 
     .faq-cointainer .question .answ{
         padding: 10px 20px;
         text-align: left;
+        font-size: .8rem;
     }
     
 }

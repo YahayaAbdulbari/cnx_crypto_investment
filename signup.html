@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sign up</title>
+    <link rel="stylesheet" href="./bootstrap5/css/all.css">
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/form.css">
+</head>
+<body>
+
+    <header>
+        <div class="tittle">
+            <a href="index.html"><i class="fa-brands fa-fantasy-flight-games" id="logo"></i></a>
+            <div class="name">
+                <h1>CNX</h1>
+                <p>crypto exchange</p>
+            </div>
+
+            <div class="toggle-btn">
+                <i class="fa-solid fa-bars"></i>
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- side navigation links -->
+    <aside class="aside">
+        <nav>
+            <h2>side menu</h2>
+            <ul>
+                <a href="./index.html"><li class="active"><i class="fa-solid fa-house"></i>home</li></a>
+                <a href="./login.html"><li><i class="fa-solid fa-lock-open"></i>login</li></a>
+                <a href="./signup.html"><li><i class="fa-solid fa-user-lock"></i>sign-up</li></a>
+                <a href="#"><li><i class="fa-solid fa-user-check"></i>profile</li></a>
+                <a href="#"><li><i class="fa-solid fa-users-gear"></i>help</li></a>
+                <a href="#"><li><i class="fa-solid fa-building"></i>about</li></a>
+                <a href="#"><li><i class="fa-solid fa-phone"></i>contact us</li></a>
+                <a href="./public/coin-market.html"><li><i class="fa-solid fa-money-bill-trend-up"></i>coin market</li></a>
+                <a href="#"><li><i class="fa-solid fa-user-shield"></i>privacy policy</li></a>
+            </ul>
+        </nav>
+        <script src="./script/mainNavigation.js"></script>
+    </aside>
+
+    <div class="formbox">
+
+        <!-- sign-up form -->
+        <form action="#" method="post">
+            <h2>Sign up</h2>
+
+            <!-- fullname -->
+            <div class="inputbox">
+                <input type="text" name="username" id="fullname" placeholder="Username" required>
+            </div>
+            <div class="inputerror">
+                <p class="error">error message</p>
+            </div>
+
+            <!-- email address -->
+            <div class="inputbox">
+                <input type="email" name="email" id="email" placeholder="Email-address" required>
+            </div>
+            <div class="inputerror">
+                <p class="error">error message</p>
+            </div>
+
+            <!-- password -->
+            <div class="inputbox">
+                <input type="password" name="password" id="password" placeholder="Password" required>
+                <i class="fa-solid fa-eye-slash" id="password-visibility"></i>
+            </div>
+            <div class="inputerror">
+                <p class="error">error message</p>
+            </div>
+
+            <!-- referal code -->
+            <div class="inputbox">
+                <input type="text" name="referalcode" id="referalcode" placeholder="Referal code" required>
+            </div>
+            <div class="inputerror">
+                <p class="error">error message</p>
+            </div>
+
+            <!-- submit -->
+            <div class="inputbox btn">
+                <input type="submit" name="signup" id="signup" value="Sign-up">
+            </div>
+
+            <!-- login message -->
+            <div class="login-message">
+                <p><a href="./login.html">Login</a> if you have account</p>
+            </div>
+
+            <!-- privacy message -->
+            <div class="privacy-message">
+                <p>
+                    By signing-up, you agreed with our terms of services and <a href="#">privacy policy</a>
+                </p>
+            </div>
+            <script src="../script/form.js"></script>
+        </form>
+
+    </div>
+    
+</body>
+</html>

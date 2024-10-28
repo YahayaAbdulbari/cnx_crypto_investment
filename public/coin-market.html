@@ -4,8 +4,81 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>coin market</title>
+    <link rel="stylesheet" href="../bootstrap5/css/all.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/loader.css">
+    <style>
+      body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      @media (max-width:600px) {
+        body{
+          align-items: normal;
+        }
+        .tradingview-widget-container{
+          width: 100vw;
+        }
+      }
+    </style>
 </head>
 <body>
+
+  <!-- loading animation -->
+  <div id="loader"></div>
+  <script>
+      load_page();
+      unload_page();
+      function load_page(){
+          window.addEventListener('load', ()=>{
+              document.getElementById('loader').classList.add('page_ready');
+          });
+      }
+      function unload_page(){
+          window.addEventListener('unload', ()=>{
+              document.getElementById('loader').classList.add('page_ready');
+          });
+      }
+  </script>
+
+  <header>
+      <div class="tittle">
+          <a href="index.html"><i class="fa-brands fa-fantasy-flight-games" id="logo"></i></a>
+          <div class="name">
+              <h1>CNX</h1>
+              <p>crypto exchange</p>
+          </div>
+
+          <div class="toggle-btn">
+              <i class="fa-solid fa-bars"></i>
+              <i class="fa-solid fa-xmark"></i>
+          </div>
+      </div>
+  </header>
+
+  <!-- side navigation links -->
+  <aside class="aside">
+      <nav>
+          <h2>side menu</h2>
+          <ul>
+              <a href="#"><li class="active"><i class="fa-solid fa-house"></i>home</li></a>
+              <a href="./login.html"><li><i class="fa-solid fa-lock-open"></i>login</li></a>
+              <a href="./signup.html"><li><i class="fa-solid fa-user-lock"></i>sign-up</li></a>
+              <a href="#"><li><i class="fa-solid fa-user-check"></i>profile</li></a>
+              <a href="#"><li><i class="fa-solid fa-users-gear"></i>help</li></a>
+              <a href="#"><li><i class="fa-solid fa-building"></i>about</li></a>
+              <a href="#"><li><i class="fa-solid fa-phone"></i>contact us</li></a>
+              <a href="./public/coin-market.html"><li><i class="fa-solid fa-money-bill-trend-up"></i>coin market</li></a>
+              <a href="#"><li><i class="fa-solid fa-user-shield"></i>privacy policy</li></a>
+          </ul>
+      </nav>
+      <script src="../script/mainNavigation.js"></script>
+  </aside>
+
+  <!-- this div create space between the top body and the first section so that the section should not be behind the header -->
+   <div class="divider"></div>
+
 
     <!-- TradingView Widget BEGIN -->
 <div class="tradingview-widget-container">

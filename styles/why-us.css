@@ -30,6 +30,9 @@ section .why-us .features .feature i{
         grid-template-columns: 1fr;
         gap: 0px;
     }
+    section .why-us .features .feature i{
+        font-size: 3rem;
+    }
 }
 
 @media (min-width:610px) and (max-width:800px) {

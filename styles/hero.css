@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Gothic+A1&display=swap');
+:root{
+
+    --White: #ffffff;
+    --whitesmoke: #f0eeee;
+    --black: black;
+    --darkGray: #232323;
+    --lightGray: #626262;
+    --my-font: "Gothic A1",sans-serif;
+    --orange: orange;
+    --navy-blue: #000020;
+    --valid: #00ff00;
+    --invalid: red;
+    --warning: yellow;
+
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: var(--whitesmoke);
+    font-family: var(--my-font);
+    box-sizing: border-box;
+}
+
+/* hero section */
+section.hero{
+    width: 100%;
+    height: auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+section.hero .img-frame{
+    width: 100%;
+    height: 100vh;
+}
+
+section.hero .img-frame img{
+    width: 100%;
+    height: 100%;
+}
+
+section.hero article{
+    position: absolute;
+    width: 60%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 60px;
+    backdrop-filter: blur(4px);
+    box-shadow: 0 0 1px 1px var(--lightGray);
+}
+
+section.hero article h2{
+    color: var(--whitesmoke);
+    font-size: 3rem;
+    text-transform: capitalize;
+}
+
+section.hero article h4{
+    color: var(--orange);
+    font-size: 2rem;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+}
+
+section.hero article h2,h4{
+    text-shadow: 2px 2px 2px var(--navy-blue);
+}
+
+section.hero article p{
+    color: var(--whitesmoke);
+    text-shadow: 2px 2px 1px var(--navy-blue);
+    font-size: 1.4rem;
+    margin-top: 30px;
+    text-align: center;
+}
+
+section.hero article .btns{
+    display: flex;
+    margin-top: 40px;
+}
+section.hero article .btns a{
+    font-size: 1.4rem;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+section.hero article .btns :nth-child(1){
+    color: var(--whitesmoke);
+    padding: 10px 20px;
+    background-color: var(--orange);
+    margin-right: 30px;
+}
+section.hero article .btns :nth-child(2){
+    color: var(--navy-blue);
+    padding: 10px 20px;
+    background-color: var(--whitesmoke);
+}
+
+@media (max-width:600px) {
+    section.hero .img-frame{
+        width: 100%;
+        height: auto;
+    }
+    
+    section.hero .img-frame img{
+        width: 100%;
+        height: 400px;
+    }
+
+    section.hero article{
+        position: absolute;
+        width: 90%;
+        height: 280px;
+        padding: 40px 20px;
+        backdrop-filter: blur(1px);
+        box-shadow: 0 0 2px 1px var(--whitesmoke);
+    }
+
+    section.hero article h2{
+        font-size: 1.4rem;
+    }
+
+    section.hero article h4{
+        font-size: 1.2rem;
+        margin-bottom: 0;
+    }
+
+    section.hero article p{
+        font-size: 1rem;
+        text-shadow: none;
+    }
+
+    section.hero article .btns a{
+        font-size: 1rem;
+    }
+
+    section.hero article .btns :nth-child(1){
+        margin-right: 10px;
+    }
+  
+}

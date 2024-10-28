@@ -1,0 +1,140 @@
+.plans-section{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 30px;
+}
+
+span{
+    color: var(--orange);
+}
+
+.investment-plans{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 30px;
+}
+.plan{
+    grid-column: span 1;
+    justify-self: center;
+    width: 330px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    line-height: 50px;
+    background-color: var(--white);
+    box-shadow: 0 0 2px .5px rgb(175, 175, 175);
+    transition: .5s;
+}
+.plan h2{
+    width: 100%;
+    color: var(--navy-blue);
+    padding: 20px 0;
+    text-align: center;
+    text-transform: capitalize;
+    transition: 1s;
+}
+
+.plan:hover{
+    box-shadow: none;
+    h2{
+        color: var(--whitesmoke);
+        background-color: var(--navy-blue);
+    }
+    .values i{
+        color: var(--orange);
+    }
+    .values a button{
+        color: var(--whitesmoke);
+        background-color: var(--navy-blue);
+    }
+}
+
+.plan p{
+    color: var(--navy-blue);
+}
+
+.plan .values{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.plan .values i{
+    margin-right: 10px;
+}
+
+.plan .values a{
+    width: 100.6%;
+    margin-top: 5px;
+}
+
+.plan .values a button{
+    width: 100%;
+    height: 60px;
+    color: var(--whitesmoke);
+    background-color: var(--orange);
+    border: none;
+    font-size: 1.1rem;
+    text-transform: capitalize;
+    transition: 1s;
+}
+
+@media (max-width:600px) {
+    .investment-plans{
+        grid-template-columns: 1fr;
+        row-gap: 20px;
+        padding: 30px;
+    } 
+    .plan{
+        width: 80vw;
+        height: auto;
+        list-style: 60px;
+    }
+
+    .plan p{
+        font-size: .9rem;
+    }
+
+    .plan h2{
+        font-size: 1.1rem;
+        padding: 5px 0;
+    }
+    .plan .values a button{
+        height: 50px;
+        font-size: .9rem;
+    }
+}
+
+@media (min-width:610px) and (max-width:960px) {
+    .investment-plans{
+        grid-template-columns: 1fr 1fr;
+        row-gap: 40px;
+        padding: 30px;
+    } 
+    .plan{
+        height: auto;
+    }
+    .plan h2{
+        font-size: 2rem;
+        padding: 5px 0;
+    }
+    .plan .values p{
+        font-size: 1.5rem;
+    }
+    .plan .values a button{
+        height: 50px;
+        font-size: 1.6rem;
+    }
+}

@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Gothic+A1&display=swap');
+:root{
+
+    --White: #ffffff;
+    --whitesmoke: #f0eeee;
+    --black: black;
+    --darkGray: #232323;
+    --lightGray: #626262;
+    --my-font: "Gothic A1",sans-serif;
+    --orange: orange;
+    --navy-blue: #000020;
+    --valid: #00ff00;
+    --invalid: red;
+    --warning: yellow;
+
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+p{
+    font-size: .8rem;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: var(--navy-blue);
+    font-family: var(--my-font);
+    box-sizing: border-box;
+}
+
+.formbox{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.formbox form{
+    width: 430px;
+    height: auto;
+    color: var(--navy-blue);
+    background-color: var(--White);
+    position: absolute;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px;
+}
+
+.formbox form .inputbox{
+    width: 90%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.formbox form .inputerror{
+    width: 90%;
+    display: none;
+}
+.formbox form .inputerror p{
+    color: var(--invalid);
+    transition: 1s;
+}
+
+.formbox form .inputbox i{
+    position: absolute;
+    right: 40px;
+}
+
+.formbox form .inputbox input{
+    width: 100%;
+    height: 100%;
+    border: none;
+    padding-left: 4px;
+    letter-spacing: 1px;
+    font-size: .9rem;
+    font-family: var(--my-font);
+    border-bottom: 1px solid var(--navy-blue);
+}
+
+.formbox form .inputbox input:focus{
+    outline: none;
+    border-bottom: 1px solid var(--warning);
+}
+
+.formbox form input[type="email"]{
+    border-bottom: 1px solid var(--navy-blue);
+}
+
+.formbox form input[type="email"]:focus{
+    outline: none;
+    border-bottom: 1px solid var(--warning);
+}
+
+.formbox form input[type="email"]:valid{
+    outline: none;
+    border-bottom: 1px solid var(--valid);
+    color: var(--valid);
+}
+
+.formbox form input[type="email"]:invalid{
+    outline: none;
+    border-bottom: 1px solid var(--invalid);
+    color: var(--invalid);
+}
+
+.formbox form .btn input{
+    height: 100%;
+    background: transparent;
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--White);
+    cursor: pointer;
+    border-bottom: none;
+}
+
+.formbox form .btn{
+    margin-top: 30px;
+    border: none;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--valid);
+    border-radius: 2px;
+    font-size: 1.2rem;
+}
+
+.formbox form .btn:has(p){
+    margin: 0;
+    margin-top: 20px;
+    background-color: var(--invalid);
+    overflow: hidden;
+}
+
+.formbox form .btn p{
+    color: var(--whitesmoke);
+    text-transform: capitalize;
+    font-size: .9rem;
+}
+
+.formbox .login-message{
+    width: 90%;
+    margin-top: 10px;
+}
+.formbox .login-message a{
+    color: var(--valid);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.formbox .privacy-message{
+    width: 90%;
+    margin: 10px 0;
+}
+
+@media (max-width:600px) {
+    .formbox{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .formbox form{
+        width: 95vw;
+        padding: 20px;
+    }
+    
+    .formbox form .inputbox{
+        width: 90%;
+        height: 30px;
+        margin-top: 10px;
+    }
+
+    .formbox form .inputbox input{ 
+        font-size: .8rem;
+    }
+
+    .formbox form .btn{
+        margin-top: 20px;
+    }
+
+    .formbox form .btn:has(p){
+        margin-top: 10px;
+    }
+
+}

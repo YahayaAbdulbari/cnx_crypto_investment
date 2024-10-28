@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../bootstrap5/css/all.css">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Gothic+A1&display=swap');
+        :root{
+
+            --White: #ffffff;
+            --whitesmoke: #f0eeee;
+            --black: black;
+            --darkGray: #232323;
+            --lightGray: #626262;
+            --my-font: "Gothic A1",sans-serif;
+            --orange: orange;
+            --navy-blue: #000020;
+            --valid: #00ff00;
+            --invalid: red;
+            --warning: yellow;
+
+        }
+
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            width: 100%;
+            height: 100vh;
+            background-color: var(--whitesmoke);
+            font-family: var(--my-font);
+            box-sizing: border-box;
+        }
+
+        .plans-section{
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 40px 30px;
+        }
+
+        .investment-plans{
+            width: 100%;
+            height: 100%;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            padding: 30px;
+        }
+        .plan{
+            grid-column: span 1;
+            justify-self: center;
+            width: 350px;
+            height: 400px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            line-height: 50px;
+            background-color: var(--white);
+            box-shadow: 0 0 2px .5px rgb(175, 175, 175);
+            transition: .5s;
+        }
+        .plan h2{
+            width: 100%;
+            color: var(--navy-blue);
+            padding: 20px 0;
+            text-align: center;
+            text-transform: capitalize;
+            transition: 1s;
+        }
+        .plan:hover{
+            box-shadow: none;
+            h2{
+                color: var(--whitesmoke);
+                background-color: var(--navy-blue);
+            }
+            .values i{
+                color: var(--orange);
+            }
+            .values a button{
+                color: var(--whitesmoke);
+                background-color: var(--navy-blue);
+            }
+        }
+        .plan p{
+            color: var(--navy-blue);
+        }
+        .plan .values{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .plan .values i{
+            margin-right: 10px;
+        }
+        .plan .values a{
+            width: 100.6%;
+            margin-top: 5px;
+        }
+        .plan .values a button{
+            width: 100%;
+            height: 60px;
+            color: var(--whitesmoke);
+            background-color: var(--orange);
+            border: none;
+            font-size: 1.1rem;
+            text-transform: capitalize;
+            transition: 1s;
+        }
+
+        @media (max-width:600px) {
+            .investment-plans{
+                grid-template-columns: 1fr;
+                row-gap: 40px;
+                padding: 30px;
+            } 
+            .plan{
+                width: 80vw;
+                height: auto;
+                list-style: 60px;
+            }
+            .plan h2{
+                font-size: 1.2rem;
+                padding: 5px 0;
+            }
+            .plan .values a button{
+                height: 50px;
+                font-size: 1rem;
+            }
+        }
+
+        @media (min-width:610px) and (max-width:960px) {
+            .investment-plans{
+                grid-template-columns: 1fr 1fr;
+                row-gap: 40px;
+                padding: 30px;
+            } 
+            .plan{
+                height: auto;
+            }
+            .plan h2{
+                font-size: 2rem;
+                padding: 5px 0;
+            }
+            .plan .values p{
+                font-size: 1.5rem;
+            }
+            .plan .values a button{
+                height: 50px;
+                font-size: 1.6rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <section class="plans-section">
+        <h2>investmentplans <span>plans</span></h2>
+        <div class="investment-plans">
+        
+            <div class="plan">
+                <h2>basic</h2>
+                <div class="values">
+                    <p><i class="fa-solid fa-marker"></i> $100 - $1000</p>
+                    <p><i class="fa-solid fa-marker"></i> $200 - $2000</p>
+                    <p><i class="fa-solid fa-marker"></i> $300 - $3000</p>
+                    <p><i class="fa-solid fa-marker"></i> $400 - $4000</p>
+                    <p><i class="fa-solid fa-marker"></i> $500 - $5000</p>
+                    <a href="#"><button>try this plan</button></a>
+                </div>
+            </div>
+    
+            <div class="plan">
+                <h2>standard</h2>
+                <div class="values">
+                    <p><i class="fa-solid fa-marker"></i> $600 - $6025</p>
+                    <p><i class="fa-solid fa-marker"></i> $700 - $7050</p>
+                    <p><i class="fa-solid fa-marker"></i> $800 - $8075</p>
+                    <p><i class="fa-solid fa-marker"></i> $900 - $9080</p>
+                    <p><i class="fa-solid fa-marker"></i> $1000 - $10,085</p>
+                    <a href="#"><button>try this plan</button></a>
+                </div>
+            </div>
+    
+            <div class="plan">
+                <h2>advanced</h2>
+                <div class="values">
+                    <p><i class="fa-solid fa-marker"></i> $10,000 - $120,000</p>
+                    <p><i class="fa-solid fa-marker"></i> $20,000 - $250,000</p>
+                    <p><i class="fa-solid fa-marker"></i> $30,000 - $370,000</p>
+                    <p><i class="fa-solid fa-marker"></i> $40,000 - $495,000</p>
+                    <p><i class="fa-solid fa-marker"></i> $50,000 - $615,000</p>
+                    <a href="#"><button>try this plan</button></a>
+                </div>
+            </div>
+
+            <div class="plan">
+                <h2>premium</h2>
+                <div class="values">
+                    <p><i class="fa-solid fa-marker"></i> $10,000 - $120,000</p>
+                    <p><i class="fa-solid fa-marker"></i> $20,000 - $250,000</p>
+                    <p><i class="fa-solid fa-marker"></i> $30,000 - $370,000</p>
+                    <p><i class="fa-solid fa-marker"></i> $40,000 - $495,000</p>
+                    <p><i class="fa-solid fa-marker"></i> $50,000 - $615,000</p>
+                    <a href="#"><button>try this plan</button></a>
+                </div>
+            </div>
+    
+        </div>
+    </section>
+    
+</body>
+</html>

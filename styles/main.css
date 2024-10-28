@@ -31,10 +31,15 @@ body{
 
 h1{
     color: var(--navy-blue);
+    text-transform: capitalize;
+    text-wrap: wrap;
 }
+
 h2{
     text-align: center;
     color: var(--navy-blue);
+    text-transform: capitalize;
+    text-wrap: nowrap;
 }
 
 /* ************************************************************************************* */
@@ -55,12 +60,14 @@ header .tittle{
     width: 100%;
     height: 100%;
     display: flex;
+    align-items: center;
     justify-content: space-between;
 }
 
-header .tittle img{
-    width: 90px;
-    height: 100%;
+header .tittle #logo{
+    color: var(--orange);
+    font-size: 4rem;
+    margin-left: 10px;
 }
 
 header .tittle .name{
@@ -127,7 +134,6 @@ aside nav h2{
     color: var(--orange);
     font-size: 1.8rem;
     padding: 30px;
-    /* background-color: var(--navy-blue); */
     text-wrap: nowrap;
 }
 
@@ -166,12 +172,13 @@ aside nav a li i{
 
     header{
         width: 100vw;
-        height: 70px;
+        height: 60px;
     }
 
-    header .tittle img{
-        width: 70px;
-        height: 100%;
+    header .tittle #logo{
+        color: var(--orange);
+        font-size: 2.5rem;
+        margin-left: 10px;
     }
 
     header .tittle .name{
@@ -180,10 +187,11 @@ aside nav a li i{
     }
 
     header .tittle .name h1{
-        font-size: 1.8rem;
+        font-size: 1.2rem;
+        text-shadow: 2px 2px 1px var(--whitesmoke);
     }
     header .tittle .name p{
-        font-size: 1.1rem;
+        font-size: 1rem;
         color: var(--whitesmoke);
         text-align: center;
     }
@@ -191,13 +199,17 @@ aside nav a li i{
     header .tittle .toggle-btn{
         width: 65px;
         height: 100%;
-        font-size: 1.6rem;
+        font-size: 1.2rem;
+    }
+
+    header .tittle .toggle-btn i{
+        padding: 5px;
     }
 
     /* side navigation links */
 
     aside{
-        margin-top: 70px;
+        margin-top: 55px;
     }
 
     aside.open{
@@ -206,72 +218,19 @@ aside nav a li i{
     }
 
     aside nav h2{
-        font-size: 1.4rem;
-        padding: 10px 30px;
+        font-size: 1.1rem;
+        padding: 10px 20px;
+        margin-top: 10px;
     }
 
     aside nav ul a li{
         width: 100%;
         padding: 15px 0;
-        font-size: 1.1rem;
-
+        font-size: .9rem;
     }
 
 }
 
-/* bottom navigation */
-@media screen and (max-width:600px) {
-    .bottom-nav{
-        position: fixed;
-        bottom: 0;
-        width: 100%;
-        height: 70px;
-        background-color: var(--sky-blue);
-        z-index: 99;
-        transition: 1s;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .bottom-nav.close{
-        height: 0;
-    }
-    .bottom-nav nav{
-        width: 100%;
-        height: 100%;
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        align-items: center;
-        justify-content: center;
-        padding: 10px 0;
-    }
-
-    .bottom-nav nav a{
-        grid-column: span 1;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-between;
-        text-decoration: none;
-        text-transform: capitalize;
-        text-wrap: nowrap;
-        color: var(--black);
-        font-weight: bold;
-    }
-    .bottom-nav nav a i{
-        font-size: 1.4rem;
-        color: var(--whitesmoke);
-        text-shadow: 2px 2px 1px var(--lightGray);
-    }
-    .bottom-nav nav a.active{
-        color: var(--valid);
-    }
-
-    .bottom-nav nav a .fa-message{
-        color: blue;
-    }
-}
 /* ************************************************************************************* */
                              /* ALL NAVIGATIONS */
 /* ************************************************************************************* */
@@ -282,7 +241,7 @@ aside nav a li i{
 
 @media screen and (max-width:600px) {
     .divider{
-        padding-top: 70px;
+        padding-top: 50px;
     }
 }
 
@@ -290,7 +249,6 @@ section{
     width: 100vw;
     height: auto;
     background-color: whitesmoke;
-    border-bottom: 1px solid var(--navy-blue);
 }
 
 /* ************************************************************************************* */
@@ -363,6 +321,10 @@ section .whattoachieve .features .feature h3{
         width: 80vw;
         height: 240px;
     }
+
+    section .whattoachieve .features .feature i{
+        font-size: 3.5rem;
+    }
 }
 
 @media (min-width:610px) and (max-width:800px) {
@@ -383,4 +345,15 @@ section .whattoachieve .features .feature h3{
 }
 .tradingview-widget-copyright{
     display: none !important;
+}
+
+@media (max-width:600px) {
+    h1{
+        text-align: center;
+        font-size: 1.2rem;
+    }
+    h2{
+        text-align: center;
+        font-size: 1.1rem;
+    }
 }
