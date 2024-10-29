@@ -92,6 +92,15 @@ section.hero article .btns{
     display: flex;
     margin-top: 40px;
 }
+
+section.hero article .btns a{
+    transition: .5s;
+}
+
+section.hero article .btns a:hover{
+    border-radius: 15px;
+}
+
 section.hero article .btns a{
     font-size: 1.4rem;
     text-decoration: none;
