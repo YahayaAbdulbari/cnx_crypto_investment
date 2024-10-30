@@ -44,7 +44,7 @@ body{
 
 .slider .slider-container .controller{
     position: absolute;
-    z-index: 10;
+    z-index: 2;
     color: white;
     bottom: 100px;
     width: 200px;
