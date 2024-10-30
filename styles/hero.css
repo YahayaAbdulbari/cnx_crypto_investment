@@ -59,7 +59,7 @@ section.hero article{
     align-items: center;
     justify-content: center;
     padding: 40px 60px;
-    backdrop-filter: blur(2px);
+    backdrop-filter: blur(1px);
     box-shadow: 0 0 1px 1px var(--lightGray);
 }
 
