@@ -136,7 +136,10 @@ section.hero #container .btns :nth-child(2){
         padding: 40px 20px;
         backdrop-filter: blur(1px);
         box-shadow: 0 0 2px 1px var(--whitesmoke);
-        /* box-shadow: none; */
+    }
+
+    section.hero #container p{
+        margin-top: 20px;
     }
 
     section.hero #container h2{
@@ -151,6 +154,11 @@ section.hero #container .btns :nth-child(2){
     section.hero #container p{
         font-size: 1rem;
         text-shadow: none;
+    }
+
+    section.hero #container .btns{
+        display: flex;
+        margin-top: 20px;
     }
 
     section.hero #container .btns a{
