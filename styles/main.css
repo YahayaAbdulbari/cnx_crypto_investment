@@ -46,7 +46,7 @@ h2{
                              /* ALL NAVIGATIONS */
 /* ************************************************************************************* */
 
-header{
+#header{
     width: 100%;
     height: 90px;
     background-color: var(--navy-blue);
@@ -56,7 +56,7 @@ header{
     z-index: 99;
 }
 
-header .tittle{
+#header #tittle{
     width: 100%;
     height: 100%;
     display: flex;
@@ -64,13 +64,13 @@ header .tittle{
     justify-content: space-between;
 }
 
-header .tittle #logo{
+#header #tittle #logo{
     color: var(--orange);
     font-size: 4rem;
     margin-left: 10px;
 }
 
-header .tittle .name{
+#header #tittle .name{
     width: 60%;
     height: 100%;
     display: flex;
@@ -79,18 +79,18 @@ header .tittle .name{
     justify-content: center;
 }
 
-header .tittle .name h1{
+#header #tittle .name h1{
     color: var(--orange);
     font-size: 2.5rem;
     text-transform: uppercase;
     text-shadow: 2px 2px 2px var(--whitesmoke);
 }
-header .tittle .name p{
+#header #tittle .name p{
     font-size: 1.6rem;
     color: var(--whitesmoke);
 }
 
-header .tittle .toggle-btn{
+#header #tittle .toggle-btn{
     width: 5%;
     height: 100%;
     color: var(--whitesmoke);
@@ -99,7 +99,7 @@ header .tittle .toggle-btn{
     align-items: center;
     justify-content: center;
 }
-header .tittle .toggle-btn i{
+#header #tittle .toggle-btn i{
     position: absolute;
     padding: 10px;
     border: 1px solid var(--whitesmoke);
@@ -170,41 +170,41 @@ aside nav a li i{
 /* ***************MEDIA QUERY************* */
 @media screen and (max-width:600px) {
 
-    header{
+    #header{
         width: 100vw;
         height: 60px;
     }
 
-    header .tittle #logo{
+    #header #tittle #logo{
         color: var(--orange);
         font-size: 2.5rem;
         margin-left: 10px;
     }
 
-    header .tittle .name{
+    #header #tittle .name{
         width: 75vw;
         margin-left: 2px;
     }
 
-    header .tittle .name h1{
+    #header #tittle .name h1{
         font-size: 1.2rem;
         text-shadow: 2px 2px 1px var(--whitesmoke);
     }
-    header .tittle .name p{
+    #header #tittle .name p{
         font-size: 1rem;
         color: var(--whitesmoke);
         text-align: center;
     }
 
-    header .tittle .toggle-btn{
+    #header #tittle .toggle-btn{
         width: 65px;
         height: 100%;
         font-size: 1.2rem;
     }
 
-    header .tittle .toggle-btn i{
+    #header #tittle .toggle-btn i{
         padding: 5px;
-    }
+    } */
 
     /* side navigation links */
 
@@ -250,93 +250,6 @@ section{
     height: auto;
     background-color: whitesmoke;
 }
-
-/* ************************************************************************************* */
-                                    /* WHAT TO ACHIEVE */
-/* ************************************************************************************* */
-
-section .whattoachieve{
-    background-color: whitesmoke;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 20px 10px;
-}
-
-section .whattoachieve h1{
-    text-align: center;
-}
-
-section .whattoachieve .features{
-    display: grid;
-    align-items: center;
-    justify-content: center;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    padding: 20px;
-}
-
-section .whattoachieve .features .feature{
-    width: 300px;
-    height: 260px;
-    color: var(--navy-blue);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border: .5px solid gray;
-    padding: 20px;
-    text-align: center;
-    transition: .5s;
-}
-section .whattoachieve .features .feature:hover{
-    background-color: var(--orange);
-    i{
-        color: var(--navy-blue);
-    }
-}
-
-section .whattoachieve #feature{
-    color: var(--orange);
-}
-
-section .whattoachieve .features .feature i{
-    font-size: 5rem;
-    color: var(--orange);
-    background: transparent;
-}
-
-section .whattoachieve .features .feature h3{
-    text-transform: capitalize;
-    margin: 20px 0 10px 0;
-}
-
-@media screen and (max-width:600px) {
-    section .whattoachieve .features{
-        grid-template-columns: 1fr;
-    }
-
-    section .whattoachieve .features .feature{
-        width: 80vw;
-        height: 180px;
-    }
-
-    section .whattoachieve .features .feature i{
-        font-size: 3rem;
-    }
-}
-
-@media (min-width:610px) and (max-width:800px) {
-    section .whattoachieve .features{
-        grid-template-columns: 1fr 1fr;
-    }
-}
-
-
-/* ************************************************************************************* */
-                                    /* WHAT TO ACHIEVE */
-/* ************************************************************************************* */
 
 .bottom-scroller{
     position: fixed;

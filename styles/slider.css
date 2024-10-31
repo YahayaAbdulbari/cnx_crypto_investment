@@ -40,6 +40,7 @@ body{
 
 .slider .slider-container{
     position: relative;
+    overflow: hidden;
 }
 
 .slider .slider-container .controller{
@@ -62,7 +63,6 @@ body{
     height: 100%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    /* transition: 1s; */
 }
 
 .slider .slider-container .frame img{

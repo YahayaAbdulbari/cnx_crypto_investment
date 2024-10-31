@@ -50,7 +50,7 @@ section.hero .img-frame img{
     height: 100%;
 }
 
-section.hero article{
+section.hero #container{
     position: absolute;
     width: 60%;
     height: auto;
@@ -63,24 +63,24 @@ section.hero article{
     box-shadow: 0 0 1px 1px var(--lightGray);
 }
 
-section.hero article h2{
+section.hero #container h2{
     color: var(--whitesmoke);
     font-size: 3rem;
     text-transform: capitalize;
 }
 
-section.hero article h4{
+section.hero #container h4{
     color: var(--orange);
     font-size: 2rem;
     margin-bottom: 10px;
     text-transform: capitalize;
 }
 
-section.hero article h2,h4{
+section.hero #container h2,h4{
     text-shadow: 2px 2px 2px var(--navy-blue);
 }
 
-section.hero article p{
+section.hero #container p{
     color: var(--whitesmoke);
     text-shadow: 2px 2px 1px var(--navy-blue);
     font-size: 1.4rem;
@@ -88,31 +88,31 @@ section.hero article p{
     text-align: center;
 }
 
-section.hero article .btns{
+section.hero #container .btns{
     display: flex;
     margin-top: 40px;
 }
 
-section.hero article .btns a{
+section.hero #container .btns a{
     transition: .5s;
 }
 
-section.hero article .btns a:hover{
+section.hero #container .btns a:hover{
     border-radius: 15px;
 }
 
-section.hero article .btns a{
+section.hero #container .btns a{
     font-size: 1.4rem;
     text-decoration: none;
     text-transform: capitalize;
 }
-section.hero article .btns :nth-child(1){
+section.hero #container .btns :nth-child(1){
     color: var(--whitesmoke);
     padding: 10px 20px;
     background-color: var(--orange);
     margin-right: 30px;
 }
-section.hero article .btns :nth-child(2){
+section.hero #container .btns :nth-child(2){
     color: var(--navy-blue);
     padding: 10px 20px;
     background-color: var(--whitesmoke);
@@ -129,34 +129,35 @@ section.hero article .btns :nth-child(2){
         height: 100vh;
     }
 
-    section.hero article{
+    section.hero #container{
         position: absolute;
-        width: 90%;
+        width: 80vw;
         height: 280px;
         padding: 40px 20px;
         backdrop-filter: blur(1px);
         box-shadow: 0 0 2px 1px var(--whitesmoke);
+        /* box-shadow: none; */
     }
 
-    section.hero article h2{
+    section.hero #container h2{
         font-size: 1.4rem;
     }
 
-    section.hero article h4{
+    section.hero #container h4{
         font-size: 1.2rem;
         margin-bottom: 0;
     }
 
-    section.hero article p{
+    section.hero #container p{
         font-size: 1rem;
         text-shadow: none;
     }
 
-    section.hero article .btns a{
+    section.hero #container .btns a{
         font-size: 1rem;
     }
 
-    section.hero article .btns :nth-child(1){
+    section.hero #container .btns :nth-child(1){
         margin-right: 10px;
     }
   
@@ -168,7 +169,7 @@ section.hero article .btns :nth-child(2){
         height: 700px;
     }
 
-    section.hero article{
+    section.hero #container{
         position: absolute;
         width: 90%;
         height: 380px;

@@ -1,0 +1,86 @@
+/* ************************************************************************************* */
+                                    /* WHAT TO ACHIEVE */
+/* ************************************************************************************* */
+
+section .whattoachieve{
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 10px;
+}
+
+section .whattoachieve h1{
+    text-align: center;
+}
+
+section .whattoachieve .features{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+section .whattoachieve .features .feature{
+    width: 300px;
+    height: 260px;
+    color: var(--navy-blue);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: .5px solid gray;
+    padding: 20px;
+    text-align: center;
+    transition: .5s;
+}
+section .whattoachieve .features .feature:hover{
+    background-color: var(--orange);
+    i{
+        color: var(--navy-blue);
+    }
+}
+
+section .whattoachieve #feature{
+    color: var(--orange);
+}
+
+section .whattoachieve .features .feature i{
+    font-size: 5rem;
+    color: var(--orange);
+    background: transparent;
+}
+
+section .whattoachieve .features .feature h3{
+    text-transform: capitalize;
+    margin: 20px 0 10px 0;
+}
+
+@media screen and (max-width:600px) {
+    section .whattoachieve .features{
+        grid-template-columns: 1fr;
+    }
+
+    section .whattoachieve .features .feature{
+        width: 80vw;
+        height: 180px;
+    }
+
+    section .whattoachieve .features .feature i{
+        font-size: 3rem;
+    }
+}
+
+@media (min-width:610px) and (max-width:800px) {
+    section .whattoachieve .features{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+
+/* ************************************************************************************* */
+                                    /* WHAT TO ACHIEVE */
+/* ************************************************************************************* */

@@ -59,12 +59,12 @@
     color: var(--navy-blue);
 }
 
-.services-cont .service .text{
+.services-cont .service #text{
     width: 100%;
     height: auto;
 }
 
-.services-cont .service .text p{
+.services-cont .service #text p{
     text-wrap: wrap;
     color: gray;
 }
@@ -94,7 +94,7 @@
         height: 200px;
     }
 
-    .services-cont .service .text p{
+    .services-cont .service #text p{
         font-size: .9rem;
         margin-top: 10px;
     }
@@ -130,7 +130,7 @@
         font-size: 1rem; 
     }
 
-    .services-cont .service .text{
+    .services-cont .service #text{
         padding: 10px 20px;
     }
 
