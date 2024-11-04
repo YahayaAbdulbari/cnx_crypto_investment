@@ -33,6 +33,10 @@ main{
     display: flex;
     align-items: center;
     justify-content: center;
+    background-image: url(../images/background1.jpg);
+    /* background-position: center; */
+    background-repeat: no-repeat;
+    background-clip: border-box;
 }
 
 .container{
@@ -69,6 +73,7 @@ main{
 .container .profile .welcome{
     color: var(--valid);
     font-size: 1.8rem;
+    font-weight: bold;
     text-align: center;
     font-family: var(--my-font);
     text-transform: capitalize;
