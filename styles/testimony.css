@@ -54,7 +54,7 @@ body{
     flex-direction: column;
     padding: 20px;
     background-color: var(--navy-blue);
-    box-shadow: 0 0 5px 2px var(--orange);
+    box-shadow: 0 0 5px 1px var(--orange);
     position: relative;
 }
 .testimony-container .testimony i{
@@ -103,6 +103,9 @@ body{
     grid-template-columns: 90vw;
     padding-top: 10px;
     padding-bottom: 5px;
+    }
+    .testimony-container .testimony{
+        box-shadow: 0 0 5px .5px var(--orange);
     }
     .testimony-container .testimony .message p{
         font-size: .8rem;

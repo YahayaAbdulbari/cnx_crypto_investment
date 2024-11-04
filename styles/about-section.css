@@ -209,6 +209,14 @@ body{
     color: whitesmoke;
 }
 
+.faq-cointainer .question .answ a{
+    color: blue;
+    font-size: 1.1rem;
+    text-decoration: underline white;
+    font-weight: bold;
+    margin: 0 5px;
+}
+
 @media screen and (max-width:600px) {
 
     .faq-cointainer{
@@ -231,6 +239,10 @@ body{
         padding: 10px 20px;
         text-align: left;
         font-size: .8rem;
+    }
+
+    .faq-cointainer .question .answ a{
+        font-size: 1rem;
     }
     
 }
