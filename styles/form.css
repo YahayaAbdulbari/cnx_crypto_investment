@@ -59,7 +59,11 @@ body{
     position: absolute;
 }
 
-.formbox form .fa-fantasy-flight-games{
+.formbox form a{
+    text-decoration: none;
+}
+
+.formbox form a .fa-fantasy-flight-games{
     position: absolute;
     top: 20px;
     right: 45px;
