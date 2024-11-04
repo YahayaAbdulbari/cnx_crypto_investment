@@ -88,6 +88,7 @@ h2{
 #header #tittle .name p{
     font-size: 1.6rem;
     color: var(--whitesmoke);
+    text-transform: capitalize;
 }
 
 #header #tittle .toggle-btn{
