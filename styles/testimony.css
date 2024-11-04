@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Gothic+A1&display=swap');
+:root{
+
+    --White: #ffffff;
+    --whitesmoke: #f0eeee;
+    --black: black;
+    --darkGray: #232323;
+    --lightGray: #626262;
+    --my-font: "Gothic A1",sans-serif;
+    --orange: orange;
+    --navy-blue: #000020;
+    --valid: #00ff00;
+    --invalid: red;
+    --warning: yellow;
+
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: var(--whitesmoke);
+    font-family: var(--my-font);
+    box-sizing: border-box;
+}
+
+.testimony-section{
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-top: 1px solid var(--navy-blue);
+}
+.testimony-container{
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+    position: relative;
+}
+.testimony-container .testimony{
+    grid-column: span 1;
+    border: none;
+    border-radius: 10px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: var(--navy-blue);
+    box-shadow: 0 0 5px 2px var(--orange);
+    position: relative;
+}
+.testimony-container .testimony i{
+    font-size: 1.6rem;
+    color: var(--White);
+}
+.testimony-container .testimony .message{
+    width: 100%;
+    height: auto;
+    padding: 5px;
+    margin-bottom: 40px;
+}
+.testimony-container .testimony .message p{
+    font-size: 1.3rem;
+    font-family: var(--font1A);
+    color: var(--White);
+    text-shadow: none;
+    margin-bottom: 40px;
+}
+.testimony-container .testimony .person{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: 20px;
+    margin-top: 20px;
+}
+.testimony-container .testimony .person img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 30px;
+}
+.testimony-container .testimony .person h2{
+    font-family: var(--font1A);
+    color: var(--White);
+    text-transform: capitalize;
+    font-size: 1.2rem;
+}
+
+@media screen and (max-width:600px) {
+    .testimony-container{
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 90vw;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    }
+    .testimony-container .testimony .message p{
+        font-size: .8rem;
+    }
+    .testimony-container .testimony .person h2{
+        font-size: 1.1rem;
+    }
+}
+/* 620px --- 920px */
+@media (min-width:620px) and (max-width:920px) {
+    .testimony-container{
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 90vw;
+    }
+    .testimony-container .testimony .message p{
+        font-size: 1.8rem;
+    }
+    .testimony-container .testimony .person{
+        bottom: 40px;
+    }
+    .testimony-container .testimony .person img{
+        width: 80px;
+        height: 80px;
+        margin-right: 10px;
+    }
+    .testimony-container .testimony .person h2{
+        font-size: 1.8rem;
+    }
+}
