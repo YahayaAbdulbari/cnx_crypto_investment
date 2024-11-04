@@ -242,6 +242,7 @@ body{
     }
 
     .faq-cointainer .question .answ a{
+        color: blue;
         font-size: 1rem;
     }
     
