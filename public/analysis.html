@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Gothic+A1&display=swap');
+        :root{
+
+            --White: #ffffff;
+            --whitesmoke: #f0eeee;
+            --black: black;
+            --darkGray: #232323;
+            --lightGray: #626262;
+            --my-font: "Gothic A1",sans-serif;
+            --orange: orange;
+            --navy-blue: #000020;
+            --valid: #00ff00;
+            --invalid: red;
+            --warning: yellow;
+
+        }
+
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            width: 100%;
+            height: 100vh;
+            background-color: var(--whitesmoke);
+            font-family: var(--my-font);
+            box-sizing: border-box;
+        }
+        .analysis-container{
+            width: 100%;
+            height: auto;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            background-image: url(../images/bitcoin5.jpg);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-clip: border-box;
+            padding: 30px;
+            gap: 10px;
+            align-items: center;
+            justify-content: center;
+        }
+        .analysis-container .analysis{
+            grid-column: span 1;
+            color: var(--White);
+            height: 200px;
+            border: 1px solid var(--orange);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .analysis-container .analysis h3{
+            color: var(--orange);
+            text-shadow: 2px 2px 2px var(--navy-blue);
+            text-transform: capitalize;
+            margin-bottom: 20px;
+        }
+        .analysis-container .analysis h2{
+            color: var(--White);
+            text-shadow: 2px 2px 2px var(--navy-blue);
+        }
+
+        @media (max-width:600px) {
+            .analysis-container{
+                width: 100vw;
+                grid-template-columns: 1fr;
+            }
+
+            .analysis-container .analysis{
+                width: 300px;
+                height: 150px;
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="../bootstrap5/css/all.css">
+</head>
+<body>
+
+    <div class="analysis-container">
+        <div class="analysis">
+            <h3>bitcoin traded</h3>
+            <h2>365890</h2>
+        </div>
+        <div class="analysis">
+            <h3>active wallets</h3>
+            <h2>365890</h2>
+        </div>
+        <div class="analysis">
+            <h3>successfull withdrawal</h3>
+            <h2>100890</h2>
+        </div>
+        <div class="analysis">
+            <h3>active trading profile</h3>
+            <h2>106451</h2>
+        </div>
+    </div>
+    
+</body>
+</html>

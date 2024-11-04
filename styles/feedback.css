@@ -1,0 +1,132 @@
+.feedback{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 20px auto;
+}
+
+.feedbackform{
+    width: 400px;
+    height: auto;
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--navy-blue);
+    border-radius: 5px;
+    position: relative;
+}
+.feedbackform i{
+    position: absolute;
+    top: -35px;
+    font-size: 4rem;
+    color: var(--orange);
+}
+.feedbackform h2{
+    color: var(--orange);
+    margin: 20px 0;
+    text-transform: capitalize;
+}
+.feedbackform label{
+    color: var(--White);
+    align-self: flex-start;
+    font-size: 1.2rem;
+}
+.feedbackform input{
+    width: 100%;
+    height: 30px;
+    margin: 5px 0 20px 0;
+    border: none;
+    outline: none;
+    padding-left: 20px;
+    border-radius: 3px;
+}
+.feedbackform textarea{
+    width: 100%;
+    height: 150px;
+    outline: none;
+    border: none;
+    resize: none;
+    padding: 10px;
+    border-radius: 3px;
+}
+.feedbackform button{
+    width: 100%;
+    height: 35px;
+    border: none;
+    background-color: var(--orange);
+    color: var(--White);
+    margin-top: 20px;
+    font-size: 1.2rem;
+    transition: .5s;
+    border-radius: 3px;
+}
+.feedbackform button:hover{
+    background-color: var(--navy-blue);
+    box-shadow: 0 0 1px .5px var(--White);
+}
+
+/* our agent */
+.feedback .contact-our-agent{
+    width: 400px;
+    height: auto;
+    border: 1px solid var(--navy-blue);
+}
+
+@media (max-width:600px) {
+    .feedback{
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .feedbackform{
+        width: 90vw;
+    }
+    .feedbackform i{
+        top: 0px;
+        font-size: 2.5rem;
+    }
+    .feedbackform label{
+        font-size: 1.1rem;
+    }
+
+    .feedback .contact-our-agent{
+        width: 90vw;
+        height: auto;
+        border: 1px solid var(--navy-blue);
+    }
+}
+
+@media (min-width:610px) and (max-width:900px) {
+    .feedback{
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .feedbackform{
+        width: 90vw;
+        padding: 50px;
+    }
+    .feedbackform i{
+        top: 10px;
+    }
+    .feedbackform h2{
+        font-size: 3rem;
+        margin-top: 40px;
+    }
+    .feedbackform label{
+        font-size: 2rem;
+    }
+    .feedbackform input{
+        height: 50px;
+        font-size: 1.8rem;
+        margin: 5px 0 40px 0;
+    }
+    .feedbackform textarea{
+        height: 300px;
+    }
+    .feedbackform button{
+        height: 50px;
+        font-size: 2rem;
+        margin-top: 40px;
+    }
+}

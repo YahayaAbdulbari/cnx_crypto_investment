@@ -3,50 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About</title>
+    <title>contact us</title>
     <link rel="stylesheet" href="../bootstrap5/css/all.css">
-    <style>
-        #about-section{
-            width: 100%;
-            height: auto;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            background-color: #000020;
-            color: white;
-            padding: 30px 20px;
-        }
-        #about-section .text{
-            width: 60%;
-            margin: 30px;
-        }
-        #about-section .text h2{
-            text-transform: capitalize;
-            text-align: center;
-            margin-bottom: 20px;
-            color: white;
-        }
-        #about-section .text p{
-            font-size: 1rem;
-        }
-        @media (max-width:600px) {
-            #about-section{
-                width: 100vw;
-            }
-            #about-section .text{
-                width: 95vw;
-            }
-            #about-section .text p{
-                font-size: .9rem;
-            }
-        }
-    </style>
-
-    <!-- external sheet -->
     <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/slider.css">
+    <link rel="stylesheet" href="../styles/feedback.css">
     <link rel="stylesheet" href="../styles/footer.css">
-
 </head>
 <body>
 
@@ -57,14 +19,14 @@
                 <h1>CNX</h1>
                 <p>crypto exchange</p>
             </div>
-
+    
             <div class="toggle-btn">
                 <i class="fa-solid fa-bars"></i>
                 <i class="fa-solid fa-xmark"></i>
             </div>
         </div>
     </header>
-
+    
     <!-- side navigation links -->
     <aside class="aside">
         <nav>
@@ -75,39 +37,73 @@
                 <a href="../signup.html"><li><i class="fa-solid fa-user-lock"></i>sign-up</li></a>
                 <a href="#"><li><i class="fa-solid fa-user-check"></i>profile</li></a>
                 <a href="#"><li><i class="fa-solid fa-users-gear"></i>help</li></a>
-                <a href="#"><li><i class="fa-solid fa-building"></i>about</li></a>
-                <a href="./contact.html"><li><i class="fa-solid fa-phone"></i>contact us</li></a>
+                <a href="./about.html"><li><i class="fa-solid fa-building"></i>about</li></a>
+                <a href="#"><li><i class="fa-solid fa-phone"></i>contact us</li></a>
                 <a href="./public/coin-market.html"><li><i class="fa-solid fa-money-bill-trend-up"></i>coin market</li></a>
                 <a href="#"><li><i class="fa-solid fa-user-shield"></i>privacy policy</li></a>
             </ul>
         </nav>
         <script src="../script/mainNavigation.js"></script>
     </aside>
+    
 
-    <!-- this div create space between the top body and the first section so that the section should not be behind the header -->
-     <div class="divider"></div>
+    <section class="slider">
 
-    <section id="about-section">
-        <div class="text">
-            <h2>about our company</h2>
-            <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat assumenda commodi quo labore soluta repellat culpa optio fugit id sint, hic, cumque exercitationem sit similique aliquid eos, nisi sequi cupiditate? Expedita fugit minus dignissimos animi distinctio iste laudantium libero, ad vitae corporis, nesciunt voluptate quia temporibus saepe sapiente iusto neque quas recusandae modi? Quos totam minima incidunt repellendus fugit suscipit.
-            </p>
+        <div class="slider-container">
+
+            <div class="controller">
+                <i class="fa-regular fa-circle-dot"></i>
+                <i class="fa-regular fa-circle-dot"></i>
+                <i class="fa-regular fa-circle-dot"></i>
+            </div>
+
+            <div class="frame">
+                <img src="../images/bitcoin-etherium.jpg" alt="" class="frame-image image1">
+                <img src="../images/laptop5.jpg" alt="" class="frame-image image2">
+                <img src="../images/dollar2.jpg" alt="" class="frame-image image3">
+            </div>
+            <div class="text">
+                <div class="info info1">
+                    <h2>secure & easy place to buy and sell bitcoin.</h2>
+                    <p>We buy and sell crypto to our customers in order to reduce stress</p>
+                    <a href="../signup.html"><button>get started</button></a>
+                </div>
+                <div class="info info1">
+                    <h2>Always at your service.</h2>
+                    <p>Our agents are always online and available to help you on your investment</p>
+                    <a href="#"><button>contact us</button></a>
+                </div>
+                <div class="info info1">
+                    <h2>invest with the little you have</h2>
+                    <p>We have plans for everyone. You can start with the little you have with our plans.</p>
+                    <a href="../signup.html"><button>get started</button></a>
+                </div>
+            </div>
+
         </div>
-        <div class="text">
-            <h2>our vission</h2>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque rem voluptatibus pariatur quam, incidunt quis veritatis cupiditate possimus recusandae ratione dolore blanditiis, nihil beatae officiis omnis accusantium voluptates rerum aliquam natus eveniet. Minus corporis rem nesciunt quis, culpa adipisci est!
-            </p>
-        </div>
-        <div class="text">
-            <h2>our vission</h2>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque rem voluptatibus pariatur quam, incidunt quis veritatis cupiditate possimus recusandae ratione dolore blanditiis, nihil beatae officiis omnis accusantium voluptates rerum aliquam natus eveniet. Minus corporis rem nesciunt quis, culpa adipisci est!
-            </p>
-        </div>
+        <script src="../script/slider.js"></script>
     </section>
 
+    <!-- feedback form -->
+    <div class="feedback">
+        <form action="" class="feedbackform">
+            <i class="fa-brands fa-fantasy-flight-games" id="logo"></i>
+            <h2>send your feedback</h2>
+            <label for="name">Username</label>
+            <input type="text" name="username" placeholder="username" required>
+            <label for="email">Email address</label>
+            <input type="email" name="email" placeholder="email address" required>
+            <textarea name="feedback" id="feedback"></textarea>
+            <button type="submit">Submit</button>
+        </form>
+
+        <!-- our agent -->
+        <div class="contact-our-agent">
+            <h2>contact-our-agent</h2>
+        </div>
+    </div>
+
+    <!-- footer -->
     <footer>
         <div class="image-blur"></div>
         <!-- footer about text -->

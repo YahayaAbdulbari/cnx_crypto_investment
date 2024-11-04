@@ -1,0 +1,57 @@
+.analysis-container{
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    background-image: url(../images/bitcoin5.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-clip: border-box;
+    padding: 30px;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+.analysis-container .analysis{
+    grid-column: span 1;
+    color: var(--White);
+    height: 200px;
+    border: 1px solid var(--orange);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.analysis-container .analysis h3{
+    color: var(--orange);
+    font-size: 1.6rem;
+    text-shadow: 2px 2px 2px var(--navy-blue),
+    2px 2px 0px var(--White);
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+.analysis-container .analysis h2{
+    color: var(--White);
+    font-size: 3rem;
+    text-shadow: 2px 2px 2px var(--navy-blue);
+}
+
+@media (max-width:600px) {
+    .analysis-container{
+        width: 100vw;
+        grid-template-columns: 1fr;
+    }
+
+    .analysis-container .analysis{
+        width: 85vw;
+        height: 150px;
+    }
+}
+
+@media (min-width:610px) and (max-width:900px) {
+    .analysis-container{
+        width: 100vw;
+        grid-template-columns: 1fr 1fr;
+    }
+}

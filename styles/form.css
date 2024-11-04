@@ -50,12 +50,27 @@ body{
     color: var(--navy-blue);
     background-color: var(--White);
     position: absolute;
-    padding: 20px;
+    padding: 30px 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     border-radius: 3px;
+    position: absolute;
+}
+
+.formbox form .fa-fantasy-flight-games{
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 3rem;
+    color: var(--orange);
+    transition: .2s;
+}
+.formbox form .fa-fantasy-flight-games:hover{
+    color: var(--navy-blue);
+    font-size: 2.rem;
+    top: 25px;
 }
 
 .formbox form .inputbox{
@@ -134,9 +149,14 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: var(--valid);
+    background-color: var(--navy-blue);
     border-radius: 2px;
     font-size: 1.2rem;
+    transition: .5s;
+}
+
+.formbox form .btn:hover{
+    background-color: var(--valid);
 }
 
 .formbox form .btn:has(p){
