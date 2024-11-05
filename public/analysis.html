@@ -62,12 +62,16 @@
         }
         .analysis-container .analysis h3{
             color: var(--orange);
-            text-shadow: 2px 2px 2px var(--navy-blue);
-            text-transform: capitalize;
+            font-size: 1.6rem;
+            text-shadow: 2px 2px 2px var(--navy-blue),
+            2px 2px 0px var(--White);
+            text-transform: uppercase;
             margin-bottom: 20px;
+            font-size: 1.4rem;
         }
         .analysis-container .analysis h2{
             color: var(--White);
+            font-size: 4rem;
             text-shadow: 2px 2px 2px var(--navy-blue);
         }
 
@@ -78,8 +82,22 @@
             }
 
             .analysis-container .analysis{
-                width: 300px;
+                width: 85vw;
                 height: 150px;
+            }
+
+            .analysis-container .analysis h2{
+                font-size: 3rem;
+            }
+            .analysis-container .analysis h3{
+                font-size: 1.3rem;
+            }
+        }
+
+        @media (min-width:610px) and (max-width:900px) {
+            .analysis-container{
+                width: 100vw;
+                grid-template-columns: 1fr 1fr;
             }
         }
     </style>
@@ -90,20 +108,21 @@
     <div class="analysis-container">
         <div class="analysis">
             <h3>bitcoin traded</h3>
-            <h2>365890</h2>
+            <h2 id="bitcoin-traded">365890</h2>
         </div>
         <div class="analysis">
             <h3>active wallets</h3>
-            <h2>365890</h2>
+            <h2 id="active-wallets">365890</h2>
         </div>
         <div class="analysis">
-            <h3>successfull withdrawal</h3>
-            <h2>100890</h2>
+            <h3>withdrawal via atm</h3>
+            <h2 id="successfull-withdrawal">100890</h2>
         </div>
         <div class="analysis">
             <h3>active trading profile</h3>
-            <h2>106451</h2>
+            <h2 id="active-trading-profile">106451</h2>
         </div>
+        <script src="../script/analysis.js"></script>
     </div>
     
 </body>

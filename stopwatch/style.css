@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Gothic+A1&display=swap');
+:root{
+
+    --White: #ffffff;
+    --whitesmoke: #f0eeee;
+    --black: black;
+    --darkGray: #232323;
+    --lightGray: #626262;
+    --my-font: "Gothic A1",sans-serif;
+    --orange: orange;
+    --navy-blue: #000020;
+    --valid: #00ff00;
+    --invalid: red;
+    --warning: yellow;
+
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    font-family: var(--my-font);
+    box-sizing: border-box;
+    background-image: url(../images/background1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-clip: border-box;
+}
+
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--whitesmoke);
+    box-shadow: 0 0 5px .5px var(--White);
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.container .timer-display{
+    width: 90%;
+    height: 100px;
+    background-color: var(--White);
+    box-shadow: 0 0 5px .5px var(--lightGray);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    border-radius: 5px;
+    color: var(--navy-blue);
+    text-shadow: 1px 1px 1px var(--navy-blue);
+}
+
+.container .btns{
+    width: 90%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.container .btns button{
+    width: 100px;
+    padding: 5px 10px;
+    font-size: 1.2rem;
+    border: none;
+    color: var(--White);
+    text-transform: capitalize;
+    text-shadow: 1px 1px 1px var(--navy-blue);
+    border-radius: 4px;
+    box-shadow: 0 0 5px .2px var(--navy-blue);
+}
+.container .btns :nth-child(1){
+    background-color: var(--valid);
+}
+.container .btns :nth-child(2){
+    background-color: var(--warning);
+}
+.container .btns :nth-child(3){
+    background-color: var(--invalid);
+}

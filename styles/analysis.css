@@ -28,12 +28,13 @@
     font-size: 1.6rem;
     text-shadow: 2px 2px 2px var(--navy-blue),
     2px 2px 0px var(--White);
-    text-transform: capitalize;
+    text-transform: uppercase;
     margin-bottom: 20px;
+    font-size: 1.4rem;
 }
 .analysis-container .analysis h2{
     color: var(--White);
-    font-size: 3rem;
+    font-size: 4rem;
     text-shadow: 2px 2px 2px var(--navy-blue);
 }
 
@@ -46,6 +47,13 @@
     .analysis-container .analysis{
         width: 85vw;
         height: 150px;
+    }
+
+    .analysis-container .analysis h2{
+        font-size: 3rem;
+    }
+    .analysis-container .analysis h3{
+        font-size: 1.3rem;
     }
 }
 
