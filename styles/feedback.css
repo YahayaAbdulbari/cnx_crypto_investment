@@ -1,9 +1,24 @@
+.help-section{
+    position: static;
+    padding-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@media (max-width:600px) {
+    .help-section{
+        padding-top: 50px;
+        flex-direction: column;
+    }
+}
+
+
 .feedback{
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    margin: 20px auto;
+    margin: 40px auto;
 }
 
 .feedbackform{
@@ -17,6 +32,11 @@
     border-radius: 5px;
     position: relative;
 }
+
+.feedbackform:hover h2{
+    transform: scale(1.3);
+}
+
 .feedbackform i{
     position: absolute;
     top: -35px;
@@ -27,6 +47,8 @@
     color: var(--orange);
     margin: 20px 0;
     text-transform: capitalize;
+    text-shadow: 1px 1px 1px silver;
+    transition: .5s;
 }
 .feedbackform label{
     color: var(--White);
@@ -63,24 +85,16 @@
     border-radius: 3px;
 }
 .feedbackform button:hover{
-    background-color: var(--navy-blue);
+    background-color: var(--valid);
     box-shadow: 0 0 1px .5px var(--White);
-}
-
-/* our agent */
-.feedback .contact-our-agent{
-    width: 400px;
-    height: auto;
-    border: 1px solid var(--navy-blue);
 }
 
 @media (max-width:600px) {
     .feedback{
         flex-direction: column;
-        justify-content: space-evenly;
     }
     .feedbackform{
-        width: 90vw;
+        width: 95vw;
     }
     .feedbackform i{
         top: 0px;
@@ -100,10 +114,9 @@
 @media (min-width:610px) and (max-width:900px) {
     .feedback{
         flex-direction: column;
-        justify-content: space-evenly;
     }
     .feedbackform{
-        width: 90vw;
+        width: 95vw;
         padding: 50px;
     }
     .feedbackform i{
@@ -128,5 +141,132 @@
         height: 50px;
         font-size: 2rem;
         margin-top: 40px;
+    }
+}
+
+/* our agent */
+.feedback .contact-our-agent{
+    width: 500px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 0 1px 2px rgb(197, 197, 197) inset;
+    border-radius: 5px;
+}
+
+.feedback .contact-our-agent:hover h3{
+    transform: scale(1.3);
+}
+
+.feedback .contact-our-agent h3{
+    font-size: 1.8rem;
+    color: var(--orange);
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 2px var(--navy-blue);
+    transition: .5s;
+}
+
+.feedback .contact-our-agent p{
+    line-height: 25px;
+    font-size: 1.2rem;
+}
+
+.feedback .contact-our-agent .help-info{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.feedback .contact-our-agent .help-info a{
+    width: 100%;
+    text-decoration: none;
+}
+
+.feedback .contact-our-agent .help-info .info{
+    background-color: var(--navy-blue);
+    width: 100%;
+    margin: 10px 0;
+    color: var(--White);
+    display: flex;
+    padding: 20px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.feedback .contact-our-agent .help-info .info:hover i{
+    color: var(--orange);
+    animation-name: shake;
+    animation-duration: .2s;
+}
+
+.feedback .contact-our-agent .help-info .info i{
+    font-size: 1.8rem;
+    margin-right: 20px;
+    transition: .5s;
+}
+
+@keyframes shake {
+    25%{
+        transform: rotate(90deg);
+        transform: scale(.5);
+    }
+    100%{
+        transform: rotate(-90deg);
+        transform: scale(1.5);
+    }
+}
+
+@media (max-width:600px) {
+    .feedback .contact-our-agent{
+        width: 95vw;
+        margin-top: 20px;
+    }
+    .feedback .contact-our-agent h3{
+        font-size: 1.4rem;
+        margin-bottom: 10px;
+    }
+    .feedback .contact-our-agent p{
+        font-size: 1rem;
+        line-height: 20px;
+    }
+    .feedback .contact-our-agent .help-info .info i{
+        margin-right: 10px;
+    }
+    .feedback .contact-our-agent .help-info .info{
+        margin: 5px 0;
+        padding: 10px;
+    }
+    .feedback .contact-our-agent .help-info .info p{
+        font-size: 1rem;
+    }
+}
+
+@media (min-width:610px) and (max-width:900px){
+    .feedback .contact-our-agent{
+        width: 95vw;
+        margin-top: 40px;
+    }
+    .feedback .contact-our-agent h3{
+        font-size: 3rem;
+        /* margin-bottom: 10px; */
+    }
+    .feedback .contact-our-agent p{
+        font-size: 2rem;
+        line-height: 40px;
+    }
+    .feedback .contact-our-agent .help-info .info{
+        margin: 15px 0;
+        padding: 20px;
+    }
+    .feedback .contact-our-agent .help-info .info i{
+        font-size: 4rem;
+    }
+    .feedback .contact-our-agent .help-info .info p{
+        font-size: 2rem;
     }
 }

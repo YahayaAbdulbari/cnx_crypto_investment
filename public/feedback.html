@@ -3,167 +3,144 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Gothic+A1&display=swap');
-        :root{
-
-            --White: #ffffff;
-            --whitesmoke: #f0eeee;
-            --black: black;
-            --darkGray: #232323;
-            --lightGray: #626262;
-            --my-font: "Gothic A1",sans-serif;
-            --orange: orange;
-            --navy-blue: #000020;
-            --valid: #00ff00;
-            --invalid: red;
-            --warning: yellow;
-
-        }
-
-        *{
-            padding: 0;
-            margin: 0;
-            box-sizing: border-box;
-        }
-
-        body{
-            width: 100%;
-            height: 100vh;
-            background-color: var(--whitesmoke);
-            font-family: var(--my-font);
-            box-sizing: border-box;
-        }
-
-        .feedback{
-            width: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin: 20px auto;
-            align-self: center;
-        }
-
-        .feedbackform{
-            width: 400px;
-            height: auto;
-            padding: 30px 20px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            background-color: var(--navy-blue);
-            border-radius: 5px;
-            position: relative;
-        }
-        .feedbackform i{
-            position: absolute;
-            top: -35px;
-            font-size: 4rem;
-            color: var(--orange);
-        }
-        .feedbackform h2{
-            color: var(--orange);
-            margin: 20px 0;
-            text-transform: capitalize;
-        }
-        .feedbackform label{
-            color: var(--White);
-            align-self: flex-start;
-            font-size: 1.2rem;
-        }
-        .feedbackform input{
-            width: 100%;
-            height: 30px;
-            margin: 5px 0 20px 0;
-            border: none;
-            outline: none;
-            padding-left: 20px;
-            border-radius: 3px;
-        }
-        .feedbackform textarea{
-            width: 100%;
-            height: 150px;
-            outline: none;
-            border: none;
-            resize: none;
-            padding: 10px;
-            border-radius: 3px;
-        }
-        .feedbackform button{
-            width: 100%;
-            height: 35px;
-            border: none;
-            background-color: var(--orange);
-            color: var(--White);
-            margin-top: 20px;
-            font-size: 1.2rem;
-            transition: .5s;
-            border-radius: 3px;
-        }
-        .feedbackform button:hover{
-            background-color: var(--navy-blue);
-            box-shadow: 0 0 1px .5px var(--White);
-        }
-
-        @media (max-width:600px) {
-            .feedbackform{
-                width: 90vw;
-            }
-            .feedbackform i{
-                top: 0px;
-            }
-            .feedbackform label{
-                font-size: 1.1rem;
-            }
-        }
-
-        @media (min-width:610px) and (max-width:900px) {
-            .feedbackform{
-                width: 90vw;
-                padding: 50px;
-            }
-            .feedbackform i{
-                top: 10px;
-            }
-            .feedbackform h2{
-                font-size: 3rem;
-                margin-top: 40px;
-            }
-            .feedbackform label{
-                font-size: 2rem;
-            }
-            .feedbackform input{
-                height: 50px;
-                font-size: 1.8rem;
-                margin: 5px 0 40px 0;
-            }
-            .feedbackform textarea{
-                height: 300px;
-            }
-            .feedbackform button{
-                height: 50px;
-                font-size: 2rem;
-                margin-top: 40px;
-            }
-        }
-    </style>
+    <title>help</title>
     <link rel="stylesheet" href="../bootstrap5/css/all.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/feedback.css">
+    <link rel="stylesheet" href="../styles/footer.css">
 </head>
 <body>
 
-    <div class="feedback">
-        <form action="" class="feedbackform">
-            <i class="fa-brands fa-fantasy-flight-games" id="logo"></i>
-            <h2>send your feedback</h2>
-            <label for="name">Username</label>
-            <input type="text" name="username" placeholder="username" required>
-            <label for="email">Email address</label>
-            <input type="email" name="email" placeholder="email address" required>
-            <textarea name="feedback" id="feedback"></textarea>
-            <button type="submit">Submit</button>
-        </form>
-    </div>
+    <header id="header">
+        <div id="tittle">
+            <a href="../index.html"><i class="fa-brands fa-fantasy-flight-games" id="logo"></i></a>
+            <div class="name">
+                <h1>CNX</h1>
+                <p>crypto exchange</p>
+            </div>
+
+            <div class="toggle-btn">
+                <i class="fa-solid fa-bars"></i>
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- side navigation links -->
+    <aside class="aside">
+        <nav>
+            <h2>side menu</h2>
+            <ul>
+                <a href="../index.html"><li class="active"><i class="fa-solid fa-house"></i>home</li></a>
+                <a href="../login.html"><li><i class="fa-solid fa-lock-open"></i>login</li></a>
+                <a href="../signup.html"><li><i class="fa-solid fa-user-lock"></i>sign-up</li></a>
+                <a href="./account.html"><li><i class="fa-solid fa-user-check"></i>profile</li></a>
+                <a href="#"><li><i class="fa-solid fa-users-gear"></i>help</li></a>
+                <a href="./about.html"><li><i class="fa-solid fa-building"></i>about</li></a>
+                <a href="./contact.html"><li><i class="fa-solid fa-phone"></i>contact us</li></a>
+                <a href="./coin-market.html"><li><i class="fa-solid fa-money-bill-trend-up"></i>coin market</li></a>
+                <a href="#"><li><i class="fa-solid fa-user-shield"></i>privacy policy</li></a>
+            </ul>
+        </nav>
+        <script src="../script/mainNavigation.js"></script>
+    </aside>
+
+    <section class="help-section">
+        <!-- feedback form -->
+        <div class="feedback">
+            <form action="" class="feedbackform">
+                <i class="fa-brands fa-fantasy-flight-games" id="logo"></i>
+                <h2>send your feedback</h2>
+                <label for="name">Username</label>
+                <input type="text" name="username" placeholder="username" required>
+                <label for="email">Email address</label>
+                <input type="email" name="email" placeholder="email address" required>
+                <textarea name="feedback" id="feedback"></textarea>
+                <button type="submit">Submit</button>
+            </form>
+
+            <!-- our agent -->
+            <div class="contact-our-agent">
+                <h3>We're here to help</h3>
+                <p>from offering expert advices to solve complex problems, We've got you covered.</p>
+                <div class="help-info">
+                    <a href="#">
+                        <div class="info">
+                            <i class="fa-solid fa-message"></i>
+                            <p>Chart with a business advisor</p>
+                        </div>
+                    </a>
+
+                    <a href="#">
+                        <div class="info">
+                            <i class="fa-solid fa-mobile-screen-button"></i>
+                            <p>Requst a callback</p>
+                        </div>
+                    </a>
+
+                    <a href="#">
+                        <div class="info">
+                            <i class="fa-solid fa-phone"></i>
+                            <p>Call 01 361 1149</p>
+                        </div>
+                    </a>
+
+                    <a href="#">
+                        <div class="info">
+                            <i class="fa-solid fa-gear"></i>
+                            <p>Request for technical support</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <!-- footer -->
+     <footer>
+        <div class="image-blur"></div>
+        <!-- footer about text -->
+        <div class="text">
+            <div class="tittle">
+                <i class="fa-brands fa-fantasy-flight-games"></i>
+                <div id="name">
+                    <h3>cnx crypto exchange</h3>
+                    <p>cryptocurrency trading and exchange.</p>
+                </div>
+            </div>
+            <p>
+                Cnx crypto exchange is a world wide crypto investment company, we have been helping lives, 
+                uplifting people who have no means of income, and we are happy doing good to people. 
+                We also have agents in every country inorder to make our investment available to everyone, 
+                without language beigng a barrier. We are doing the best and continue to do it, 
+                because we are out to do.
+            </p>
+            <form action="#">
+                <input type="email" name="email" id="footer-email" placeholder="Email Address">
+                <a href="#"><i class="fa-solid fa-location-arrow"></i></a>
+            </form>
+        </div>
+
+        <!-- stay in touch -->
+         <div class="intouch">
+            <h3>stay in touch with us</h3>
+            <i class="fa-solid fa-location-crosshairs"></i>
+            <i class="fa-solid fa-phone-alt"></i>
+            <i class="fa-solid fa-eye">
+                <p>Active hours</p>
+            </i>
+            <ul>
+                <li>24 hours</li>
+                <li>7 days</li>
+            </ul>
+            <div class="media">
+                <i class="fa-brands fa-whatsapp-square"></i>
+                <i class="fa-brands fa-instagram-square"></i>
+                <i class="fa-brands fa-telegram-plane"></i>
+            </div>
+            <p>&copy; cnx crypto exchange</p>
+         </div>
+    </footer>
     
 </body>
 </html>

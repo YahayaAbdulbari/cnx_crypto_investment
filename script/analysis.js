@@ -17,7 +17,7 @@ let active_trading_profile = document.getElementById('active-trading-profile');
 
     let timer1 = null;
     let timer2 = null;
-    let timer3 = null;
+    let timer3 = 0;
     let timer4 = null;
 
 function counter1(){
