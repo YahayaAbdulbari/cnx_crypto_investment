@@ -91,10 +91,11 @@
 
 @media (max-width:600px) {
     .feedback{
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
     .feedbackform{
         width: 95vw;
+        margin-top: 20px;
     }
     .feedbackform i{
         top: 0px;
@@ -224,7 +225,6 @@
 @media (max-width:600px) {
     .feedback .contact-our-agent{
         width: 95vw;
-        margin-top: 20px;
     }
     .feedback .contact-our-agent h3{
         font-size: 1.4rem;

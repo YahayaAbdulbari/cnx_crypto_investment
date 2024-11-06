@@ -36,7 +36,8 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: var(--navy-blue);
+    background: transparent;
+    background-clip: blur(5px);
     z-index: 110;
 }
 
