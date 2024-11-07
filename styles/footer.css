@@ -158,6 +158,7 @@ footer .intouch ul{
     margin-left: 35px;
     font-size: .7rem;
     line-height: 20px;
+    color: var(--valid);
 }
 footer .intouch .media{
     width: 70%;
@@ -165,19 +166,23 @@ footer .intouch .media{
     justify-content: space-between;
     margin-bottom: 20px;
 }
-footer .intouch .media i{
+footer .intouch .media a i{
     font-size: 2.5rem;
+    transition: .2s;
 }
-footer .intouch .media :nth-child(1){
+footer .intouch .media a i:hover{
+    transform: translateY(-10px);
+}
+footer .intouch .media .fa-whatsapp-square{
     color: var(--valid);
     border-radius: 5px;
 }
-footer .intouch .media :nth-child(2){
+footer .intouch .media .fa-instagram-square{
     color: var(--invalid);
     background-blend-mode: multiply;
     border-radius: 5px;
 }
-footer .intouch .media :nth-child(3){
+footer .intouch .media .fa-telegram-plane{
     color: rgb(80, 168, 250);
 }
 
@@ -211,7 +216,7 @@ footer .intouch .media :nth-child(3){
         width: 40%;
         margin-bottom: 5px;
     }
-    footer .intouch .media i{
+    footer .intouch .media a i{
         font-size: 1.5rem;
     }
     footer .intouch p{
