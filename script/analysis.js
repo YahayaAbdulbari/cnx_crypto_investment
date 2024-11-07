@@ -23,7 +23,7 @@ let active_trading_profile = document.getElementById('active-trading-profile');
 function counter1(){
     btc_traded ++;
     bitcoin_traded.innerHTML = btc_traded;
-    if(btc_traded == 26006){
+    if(btc_traded == 2096){
         stop1();
     }
 
@@ -33,7 +33,7 @@ function counter1(){
 function counter2(){
     active_wllt ++;
     active_wallets.innerHTML = active_wllt;
-    if(active_wllt == 40589){
+    if(active_wllt == 3889){
         stop2();
     }
 }
@@ -47,7 +47,7 @@ function counter3(){
 function counter4(){
     active_trd_pfl ++;
     active_trading_profile.innerHTML = active_trd_pfl;
-    if(active_trd_pfl == 98765){
+    if(active_trd_pfl == 3889){
         stop4();
     }
 }
