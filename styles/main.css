@@ -88,7 +88,6 @@ h2{
 #header #tittle .name p{
     font-size: 1.6rem;
     color: var(--whitesmoke);
-    text-transform: capitalize;
 }
 
 #header #tittle .toggle-btn{
@@ -188,8 +187,8 @@ aside nav a li i{
     }
 
     #header #tittle .name h1{
-        font-size: 1.2rem;
-        text-shadow: 2px 2px 1px var(--whitesmoke);
+        font-size: 1rem;
+        text-shadow: 1px 1px 1px var(--whitesmoke);
     }
     #header #tittle .name p{
         font-size: 1rem;
